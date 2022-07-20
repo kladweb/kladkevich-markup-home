@@ -1,0 +1,13 @@
+a[href^="https:"] {
+  color: #f70;
+}
+
+a[href*="google"] {
+  color: #666;
+}
+
+a[target="_blank"]::after {
+  content: ' \21F1\00A0';
+  display: inline-block;
+  transform: scale(-1, 1);
+}
