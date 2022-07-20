@@ -1,0 +1,62 @@
+h1 {
+  color: orange;
+  font-weight: bold;
+  text-align: right;
+}
+
+p::first-letter {
+  color: red;
+  font-size: 30px;
+}
+
+em {
+  background-color: green;
+  color: white;
+}
+
+h2 {
+  color: blue;
+}
+
+p + h2 {
+  color: orange;
+}
+
+span {
+  font-weight: bold;
+}
+
+ol li {
+  color: red;
+}
+
+ul li:first-of-type ol li {
+  color: green;
+}
+
+ul:first-of-type li:first-of-type ol li {
+  color: grey;
+}
+
+table {
+  border: 1px solid black;
+  width: 400px;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+tr:nth-child(n+3) td:first-child {
+  color: orange;
+  font-weight: normal;
+  text-align: left;
+}
+
+tr:nth-child(n+3) td:not(:first-child) {
+  background-color: green;
+  font-weight: normal;
+  color: white;
+}
