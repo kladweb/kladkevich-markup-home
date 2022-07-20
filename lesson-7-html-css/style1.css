@@ -26,17 +26,19 @@ span {
   font-weight: bold;
 }
 
-ol li {
-  color: red;
-}
-
-ul li:first-of-type ol li {
+ul + h2 + ul ol > li {
   color: green;
 }
 
-ul:first-of-type li:first-of-type ol li {
-  color: grey;
+p + h2 + ul ol > li {
+  color: gray;
 }
+
+ul > li + li > ol > li {
+  color: red;
+}
+
+/*Оформление таблицы. Вариант 1*/
 
 table {
   border: 1px solid black;
@@ -49,14 +51,40 @@ td {
   font-weight: bold;
 }
 
-tr:nth-child(n+3) td:first-child {
+tr + tr + tr > td {
   color: orange;
   font-weight: normal;
   text-align: left;
 }
 
-tr:nth-child(n+3) td:not(:first-child) {
+tr + tr + tr > td + td {
   background-color: green;
   font-weight: normal;
   color: white;
+  text-align: center;
 }
+
+/*Оформление таблицы. Вариант 2 - через псевдоклассы.*/
+
+/*table {*/
+/*  border: 1px solid black;*/
+/*  width: 400px;*/
+/*}*/
+
+/*td {*/
+/*  border: 1px solid black;*/
+/*  text-align: center;*/
+/*  font-weight: bold;*/
+/*}*/
+
+/*tr:nth-child(n+3) td:first-child {*/
+/*  color: orange;*/
+/*  font-weight: normal;*/
+/*  text-align: left;*/
+/*}*/
+
+/*tr:nth-child(n+3) td:not(:first-child) {*/
+/*  background-color: green;*/
+/*  font-weight: normal;*/
+/*  color: white;*/
+/*}*/
