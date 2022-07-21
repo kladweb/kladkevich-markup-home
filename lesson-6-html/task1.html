@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            border: 7px solid white; /* Прячем рамку вокруг таблицы */
+        }
+
+        td {
+            border: 5px solid #000;
+            background: #ffffff;
+        }
+
+        td.widthX2 {
+            width: 114px;
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        tr.heightX2 {
+            height: 100px;
+        }
+
+        tr.heightX05 {
+            height: 30px;
+        }
+
+        .yellow {
+            background: #fffa69;
+        }
+
+        .blue {
+            background: #074481;
+        }
+
+        .red {
+            background: #ff5b2d;
+        }
+
+        .black {
+            background: #000000;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="2"></td>
+        <td colspan="2"></td>
+        <td class="yellow" colspan="2"></td>
+      </tr>
+      <tr class="heightX2">
+        <td></td>
+        <td class="red" colspan="3" rowspan="2"></td>
+        <td class="yellow" colspan="2"></td>
+      </tr>
+      <tr class="heightX2">
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="widthX2"></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="yellow" rowspan="3"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td></td>
+        <td class="blue" colspan="2" rowspan="2"></td>
+      </tr>
+      <tr class="heightX05">
+        <td colspan="2" rowspan="2"></td>
+        <td class="black"></td>
+      </tr>
+      <tr class="heightX05">
+        <td colspan="3"></td>
+      </tr>
+    </table>
+  </body>
+</html>
