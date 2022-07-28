@@ -1,0 +1,23 @@
+table {
+  max-width: 900px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  background-color: #FFF;
+  border-bottom: 1px solid #cbcbcb;
+  height: 30px;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #DBEBF8;
+}
+
+td:nth-child(2n+3) {
+  background-color: #F3F2E0;
+}
