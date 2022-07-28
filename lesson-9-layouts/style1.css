@@ -1,0 +1,77 @@
+body {
+  font-family: "Arial";
+  font-size: 24px;
+  padding: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  line-height: 20px;
+  display: inline-block;
+  border-bottom: 2px solid;
+  margin: 26px 20px 26px 20px;
+  cursor: pointer;
+}
+
+label[for="red"] {
+  color: #FF0000;
+}
+
+label[for="green"] {
+  color: #008100;
+  margin-left: 46px;
+}
+
+label[for="blue"] {
+  color: #0000FF;
+  margin-left: 46px;
+  margin-right: 54px;
+}
+
+span {
+  padding: 6px 13px;
+  color: white;
+  border-radius: 12px;
+  margin-left: 1px;
+}
+
+span.red {
+  background-color: #FF0000;
+}
+
+span.green {
+  background-color: #008100;
+}
+
+span.blue {
+  background-color: #0000FF;
+}
+
+input#red:checked ~ label[for="red"] {
+  opacity: 0.4;
+}
+
+input#red:checked ~ span.red {
+  display: none;
+}
+
+input#green:checked ~ label[for="green"] {
+  opacity: 0.4;
+}
+
+input#green:checked ~ span.green {
+  display: none;
+}
+
+input#blue:checked ~ label[for="blue"] {
+  opacity: 0.4;
+}
+
+input#blue:checked ~ span.blue {
+  display: none;
+}
+
+
